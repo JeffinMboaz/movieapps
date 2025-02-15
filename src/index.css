@@ -1,0 +1,17 @@
+/* Make cards responsive */
+.card-img-top {
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* style for movies,topmovies,topshows,tvshow.jsx */
+.moviecards{
+  background-color: rgb(46, 46, 56);
+  color: white;
+  }
