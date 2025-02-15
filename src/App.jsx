@@ -13,6 +13,7 @@ function App() {
   return (
     <BrowserRouter basename='/movieapps'>
       <Header />
+      <Homepg/>
       <div>
         <Routes>
           <Route exact path='/movieapps' element={<Homepg />} />
