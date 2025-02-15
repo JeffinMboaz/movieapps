@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import {Link} from 'react-router-dom'
 
 function Header() {
   return (
@@ -12,11 +13,11 @@ function Header() {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto my-2 my-lg-0 " navbarScroll>
-            <Nav.Link href="/" className='text-white '>Home</Nav.Link>
-            <Nav.Link href="/movies" className='text-white '>Movies</Nav.Link>
-            <Nav.Link href="/tvshows" className='text-white '>Tv shows</Nav.Link>
-            <Nav.Link href="/topmovies" className='text-white '>Top Movies</Nav.Link>
-            <Nav.Link href="/topshows" className='text-white '>Top shows</Nav.Link>
+            <Nav.Link Link to href="/movieapps" className='text-white '>Home</Nav.Link>
+            <Nav.Link  Link to href="/movies" className='text-white '>Movies</Nav.Link>
+            <Nav.Link Link to href="/tvshows" className='text-white '>Tv shows</Nav.Link>
+            <Nav.Link Link to href="/topmovies" className='text-white '>Top Movies</Nav.Link>
+            <Nav.Link Link to href="/topshows" className='text-white '>Top shows</Nav.Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control type="search" placeholder="Search movies, TV shows..." className="me-2 rounded-pill" aria-label="Search" />
