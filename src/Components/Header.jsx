@@ -7,6 +7,7 @@ import Form from 'react-bootstrap/Form';
 
 function Header() {
   return (
+    <>
     <Navbar expand="lg" fixed="top" bg="dark" variant="dark" className="text-uppercase fw-bold">
       <Container fluid>
         <Navbar.Brand as={Link} to="/"><h4>Imax</h4></Navbar.Brand>
@@ -19,14 +20,21 @@ function Header() {
             <Nav.Link as={Link} to="/topmovies">Top Movies</Nav.Link>
             <Nav.Link as={Link} to="/topshows">Top Shows</Nav.Link>
           </Nav>
-          <Form className="d-flex">
+          
+            <Form className="d-flex">
             <Form.Control type="search" placeholder="Search..." className="me-2 rounded-pill" />
             <Button variant="outline-info">Search</Button>
           </Form>
+         
+          
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    
+ 
+    </>
   );
+ 
 }
 
 export default Header;

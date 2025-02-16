@@ -12,11 +12,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 function App() {
   return (
     <BrowserRouter basename='/movieapps'>
-      <Header />
-      <Homepg/>
-      <div>
+        <Header/>
+          <div>
+          
         <Routes>
-          <Route exact path='/movieapps' element={<Homepg />} />
+          <Route exact path='/' element={<Homepg />} />
           <Route path='/movies' element={<Movies />} />
           <Route path='/tvshows' element={<TvShows />} />
           <Route path='/topmovies' element={<Topmovies />} />

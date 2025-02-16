@@ -3,6 +3,7 @@ import Posters from './homecontents/Posters';
 import './homecontents/Homepg.css';
 
 function Homepg() {
+  
   return (
     <div className=' container-fluid bg-dark  py-3'>
       <div className=' bg-dark text-center rounded my-5 p-2'>
@@ -16,7 +17,6 @@ function Homepg() {
         <div className='w-50 m-auto bg-secondary rounded'>
           <marquee> <h4 className=' text-warning'>Movies&Tv shows </h4></marquee>
         </div>
-        
         <Posters />
       </div>
     </div>
